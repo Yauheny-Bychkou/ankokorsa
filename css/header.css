@@ -1,0 +1,134 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 99;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+.header__block {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.header__nav-list {
+  display: flex;
+  column-gap: 40px;
+}
+.header__nav-head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  padding: 5px 0;
+}
+
+.header__nav-head span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.header__nav-sublist {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  opacity: 0;
+  pointer-events: none;
+}
+.header__phone {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.header__phone-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+.header__phone-value {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.header__localization {
+  position: relative;
+}
+.header__localization-value {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.header__localization-value {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+.header__localization-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+.header__phone-mobile,
+.header__burger {
+  display: none;
+}
+@media (max-width: 1800px) {
+  .header__block {
+    column-gap: 20px;
+  }
+  .header__nav-list {
+    column-gap: 20px;
+  }
+}
+@media (max-width: 1650px) {
+  .header__block {
+    column-gap: 10px;
+  }
+  .header__nav-list {
+    column-gap: 10px;
+  }
+  .header__request.block-button {
+    padding: 16px 30px;
+  }
+  .header__phone {
+    column-gap: 4px;
+  }
+  .header__nav-head span,
+  .header__phone-value,
+  .header__localization-value,
+  .header__request {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .header__wrapper {
+    padding: 20px 0;
+  }
+  .header__block {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__burger .burger {
+    width: 20px;
+    height: 14px;
+  }
+  .header__phone-mobile {
+    display: block;
+    position: relative;
+  }
+}

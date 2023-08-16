@@ -1,0 +1,187 @@
+.transportation__wrapper {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 112px;
+  background-image: url("/images/transportation-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.transportation__wrapper-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 50%;
+  max-height: 908px;
+  z-index: 10;
+}
+.transportation__wrapper-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.transportation__wrapper-overlay {
+  background-color: #000;
+  opacity: 0.9;
+}
+.transportation__block {
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 8px;
+  min-height: 866px;
+  padding: 70px 60px 92px 60px;
+}
+.transportation__block-title {
+  margin-bottom: 60px;
+}
+.transportation__block-list {
+  position: relative;
+  z-index: 25;
+  width: 659px;
+  display: grid;
+  row-gap: 20px;
+  margin-bottom: 26px;
+}
+.transportation__block-button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 659px;
+  height: 54px;
+  background-color: #e06618;
+  color: #fff !important;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+  border-radius: 8px;
+}
+.transportation__block-head {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #212121;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px 30px 40px;
+}
+.transportation__block-head h3 {
+  color: #212121;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%;
+}
+.transportation__block-head svg {
+  fill: #212121;
+  transition: 0.5s ease;
+  position: relative;
+  transform: rotate(0);
+}
+.transportation__block-body {
+  display: none;
+  padding: 0 40px 32px 40px;
+}
+.transportation__block-body p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+.transportation__block-body a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration: underline !important;
+  text-decoration-line: underline !important;
+}
+.transportation__block-item {
+  transition: all 0.5s ease;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.transportation__block-item--active {
+  background-color: #212121;
+  transition: all 0.5s ease;
+}
+.transportation__block-item--active .transportation__block-head svg {
+  fill: #fff;
+  transform: rotate(-180deg);
+  transition: 0.5s ease;
+}
+.transportation__block-item--active .transportation__block-head {
+  border: 1px solid transparent;
+  padding-bottom: 20px;
+}
+.transportation__block-item--active .transportation__block-head h3 {
+  color: #fff;
+}
+.transportation__block-item--active .transportation__block-body {
+  display: block;
+}
+@media (max-width: 1900px) {
+  .transportation__wrapper-image {
+    width: 40%;
+  }
+}
+@media (max-width: 1500px) {
+  .transportation__block {
+    min-height: unset;
+  }
+  .transportation__block-list {
+    width: 100%;
+  }
+  .transportation__block-title {
+    width: 100%;
+    text-align: left;
+  }
+  .transportation__wrapper-image {
+    display: none;
+  }
+  .transportation__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 990px) {
+  .transportation__block-button {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .transportation__block-head h3 {
+    font-size: 18px;
+  }
+  .transportation__block-head {
+    padding: 16px 16px 16px 16px;
+  }
+  .transportation__block-body {
+    padding: 0 16px 16px 16px;
+  }
+  .transportation__block-body p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .transportation__block-button {
+  }
+  .transportation__block-item--active .transportation__block-head {
+    padding-bottom: 12px;
+  }
+  .transportation__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .transportation__block {
+    padding: 30px 20px;
+  }
+  .transportation__block-title {
+    margin-bottom: 40px;
+  }
+}

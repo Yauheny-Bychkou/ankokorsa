@@ -1,0 +1,122 @@
+.achievements {
+  overflow: hidden;
+}
+.achievements__wrapper {
+  padding-top: 94px;
+}
+.achievements__info {
+  display: grid;
+  grid-template-columns: minmax(0, max-content) minmax(0, 718px);
+  column-gap: 139px;
+  margin-bottom: 40px;
+  color: #212121;
+}
+.achievements__info-text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.achievements__info-text a {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration-line: underline;
+}
+
+.achievements__swiper {
+  padding: 20px;
+}
+.achievements__swiper .swiper-slide {
+  width: 349px;
+}
+.achievements__slider-container.container {
+  position: relative;
+  height: 238px;
+}
+
+.achievements__slide {
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.1);
+}
+.achievements__slider {
+  margin-bottom: 160px;
+}
+.achievements__slide {
+  padding: 32px;
+}
+.achievements__slide h3 {
+  color: #e06618;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+  height: 102px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 16px;
+}
+.achievements__slide p {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  height: 66px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 1450px) {
+  .achievements__slider-container.container {
+    height: 238px;
+  }
+}
+@media (max-width: 1199px) {
+  .achievements__info {
+    column-gap: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .achievements__swiper {
+    width: 100%;
+  }
+  .achievements__slider {
+    margin-bottom: 80px;
+  }
+  .achievements__slider-container.container {
+    padding: 0;
+    margin: 0;
+    height: 220px;
+  }
+  .achievements__slide h3 {
+    font-size: 20px;
+    height: 48px;
+    -webkit-line-clamp: 2;
+    margin-bottom: 51px;
+  }
+  .achievements__slide p {
+    font-size: 14px;
+    height: 60px;
+  }
+  .achievements__slide {
+    padding: 20px;
+  }
+  .achievements__info h2 {
+    max-width: 250px;
+  }
+  .achievements__info {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    margin-bottom: 20px;
+  }
+  .achievements__info-text p {
+    font-size: 18px;
+  }
+
+  .achievements__wrapper {
+    padding-top: 80px;
+  }
+}
