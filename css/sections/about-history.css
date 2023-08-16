@@ -1,0 +1,135 @@
+.about-history__wrapper {
+  position: relative;
+  background-image: url("/images/about-history.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-history__overlay {
+  background-color: #000;
+  opacity: 0.9;
+}
+.about-history__container {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 112px;
+  z-index: 5;
+}
+.about-history__block {
+  background-color: #fff;
+  padding: 70px 60px;
+  border-radius: 8px;
+}
+.about-history__years-slide {
+  position: relative;
+}
+.about-history__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  column-gap: 20px;
+}
+.about-history__years {
+  max-width: 450px;
+  height: 30px;
+}
+.about-history__years .swiper-slide {
+  width: 60px;
+}
+.about-history__years-slide {
+  color: #959595;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.about-history__years-slide--active {
+  color: #212121;
+  font-size: 24px;
+  font-weight: 600;
+}
+.about-history__swiper {
+  width: 753px;
+}
+.about-history__swiper-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.about-history__swiper-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-history__swiper-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 200px;
+  font-weight: 600;
+  line-height: 140%;
+  mix-blend-mode: soft-light;
+}
+.about-history__swiper-text {
+  padding: 0 20px;
+}
+.about-history__swiper-text p {
+  color: #212121;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media (max-width: 1199px) {
+  .about-history__swiper-image {
+    max-height: 500px;
+    height: unset;
+  }
+
+  .about-history__years {
+    margin-left: 0;
+  }
+  .about-history__top {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+  }
+  .about-history__swiper {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .about-history__years {
+    max-width: unset;
+    width: 100%;
+  }
+  .about-history__top .title {
+    max-width: 400px;
+  }
+  .about-history__block {
+    padding: 30px 20px;
+  }
+  .about-history__years-slide {
+    font-size: 20px;
+  }
+  .about-history__years {
+    height: 28px;
+  }
+  .about-history__years .swiper-slide {
+    width: 46px;
+  }
+  .about-history__top {
+    margin-bottom: 24px;
+  }
+  .about-history__swiper-year {
+    font-size: 88px;
+    line-height: 140%;
+  }
+  .about-history__swiper-text {
+    padding: 0;
+  }
+}

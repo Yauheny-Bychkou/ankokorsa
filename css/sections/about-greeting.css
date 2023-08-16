@@ -1,0 +1,44 @@
+.about-greeting__wrapper {
+  position: relative;
+}
+.about-greeting__block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding-top: 184px;
+}
+.about-greeting__overlay {
+  background-color: #000;
+  opacity: 0.8;
+}
+.about-greeting__image {
+  width: 100%;
+  height: 382px;
+}
+.about-greeting__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-greeting__block h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .about-greeting__block {
+    padding-top: 112px;
+  }
+  .about-greeting__block h2 {
+    font-size: 31px;
+  }
+  .about-greeting__image {
+    height: 246px;
+  }
+}
