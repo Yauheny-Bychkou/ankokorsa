@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 .achievements__wrapper {
-  padding-top: 94px;
+  padding-top: 105px;
 }
 .achievements__info {
   display: grid;
@@ -40,7 +40,7 @@
   box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.1);
 }
 .achievements__slider {
-  margin-bottom: 160px;
+  margin-bottom: 188px;
 }
 .achievements__slide {
   padding: 32px;

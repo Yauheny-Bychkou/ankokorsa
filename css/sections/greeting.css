@@ -19,8 +19,8 @@
   max-width: 870px;
   max-height: 760px;
   position: relative;
-  right: -50px;
-  padding-top: 26px;
+  right: -12px;
+  padding-top: 35px;
 }
 .greeting__content-image img {
   width: 100%;
@@ -29,11 +29,11 @@
 }
 .greeting__mouse {
   position: absolute;
-  bottom: 20px;
+  bottom: 23px;
   left: 50%;
   transform: translateX(-50%);
-  width: 28px;
-  height: 44px;
+  width: 37px;
+  height: 60px;
   border: 2px solid #fff;
   border-radius: 18px;
 }

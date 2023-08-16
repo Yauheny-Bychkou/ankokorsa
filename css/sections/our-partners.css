@@ -5,7 +5,7 @@
   margin-bottom: 60px;
   display: grid;
   grid-template-columns: minmax(0, max-content) minmax(0, 718px);
-  column-gap: 139px;
+  column-gap: 230px;
 }
 .our-partners__wrapper-text p {
   color: #212121;
@@ -37,7 +37,7 @@
   object-fit: scale-down;
 }
 .our-partners__slider {
-  margin-bottom: 160px;
+  margin-bottom: 132px;
 }
 .our-partners__control {
   display: none;

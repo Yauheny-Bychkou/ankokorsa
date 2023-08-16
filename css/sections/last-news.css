@@ -1,5 +1,5 @@
 .last-news__title {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 .last-news__wrapper {
   padding-bottom: 151px;
@@ -93,6 +93,7 @@
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 20px;
+  max-width: 587px;
 }
 .last-news__body-info a {
   color: #fff;
