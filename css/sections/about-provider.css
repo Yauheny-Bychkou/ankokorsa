@@ -106,9 +106,15 @@
   .about-provider__wrapper.about-provider__wrapper--service .about-provider__image img {
     left: 75%;
   }
+  .about-provider__wrapper.about-provider__wrapper--service-custom .about-provider__image img {
+    left: 60%;
+  }
 }
 @media (max-width: 400px) {
   .about-provider__wrapper.about-provider__wrapper--service .about-provider__image img {
     left: 80%;
+  }
+  .about-provider__wrapper.about-provider__wrapper--service-custom .about-provider__image img {
+    left: 60%;
   }
 }
