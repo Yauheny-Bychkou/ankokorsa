@@ -1,5 +1,5 @@
-const initSwiperAchievements = () => {
-  const swiperAchievements = new Swiper(".main-services__swiper", {
+const initSwiperServices = () => {
+  const swiperServices = new Swiper(".main-services__swiper", {
     slidesPerView: "auto",
     freeMode: true,
     breakpoints: {
@@ -14,5 +14,5 @@ const initSwiperAchievements = () => {
 };
 
 if (document.querySelector(".main-services__swiper")) {
-  initSwiperAchievements();
+  initSwiperServices();
 }

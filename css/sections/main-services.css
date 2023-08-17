@@ -1,6 +1,9 @@
 .main-services__wrapper {
   padding-top: 100px;
 }
+.main-services--detail .main-services__wrapper {
+  padding-top: 0;
+}
 .main-services__wrapper .title {
   margin-bottom: 60px;
 }
@@ -11,8 +14,14 @@
   border-radius: 8px;
   overflow: hidden;
 }
+.main-services--detail .main-services__swiper .swiper-slide {
+  width: 329px;
+  height: 426px;
+}
+
 .main-services__slide {
   position: relative;
+  height: 100%;
 }
 .main-services__slide img {
   width: 100%;
@@ -40,6 +49,11 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   padding-right: 20px;
+}
+.main-services--detail .main-services__slide h3 {
+  max-width: unset;
+  padding-right: 20px;
+  height: unset;
 }
 .main-services__slide svg {
   position: absolute;
@@ -80,5 +94,12 @@
   .main-services__swiper .swiper-slide {
     width: 296px;
     height: 214px;
+  }
+  .main-services--detail .main-services__swiper .swiper-slide {
+    width: 244px;
+    height: 299px;
+  }
+  .main-services__services {
+    height: 299px;
   }
 }

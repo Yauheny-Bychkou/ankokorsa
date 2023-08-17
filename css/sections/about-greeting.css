@@ -18,6 +18,9 @@
   width: 100%;
   height: 382px;
 }
+.about-greeting__image.about-greeting__image--service {
+  height: 452px;
+}
 .about-greeting__image .container {
   height: 100%;
 }
@@ -48,7 +51,15 @@
 .about-greeting--white .about-greeting__block h2 {
   color: #000;
 }
+@media (max-width: 990px) {
+  .about-greeting__block.about-greeting__block--service h2 {
+    font-size: 31px;
+  }
+}
 @media (max-width: 767px) {
+  .about-greeting__image.about-greeting__image--service {
+    height: 274px;
+  }
   .about-greeting__block {
     padding-top: 112px;
   }
@@ -57,5 +68,10 @@
   }
   .about-greeting__image {
     height: 246px;
+  }
+}
+@media (max-width: 410px) {
+  .about-greeting__block.about-greeting__block--service h2 {
+    font-size: 25px;
   }
 }
