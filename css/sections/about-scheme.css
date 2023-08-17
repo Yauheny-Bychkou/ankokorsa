@@ -1,6 +1,9 @@
 .about-scheme__wrapper {
   padding: 160px 0;
 }
+.about-scheme--detail .about-scheme__wrapper {
+  padding-bottom: 0;
+}
 .about-scheme__wrapper .title {
   margin-bottom: 40px;
 }

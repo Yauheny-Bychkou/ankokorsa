@@ -12,7 +12,10 @@
   object-fit: scale-down;
 }
 .about-provider__wrapper.about-provider__wrapper--service .about-provider__info {
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .about-provider__image img {
   width: 100%;
@@ -49,6 +52,12 @@
   line-height: 140%;
 }
 @media (max-width: 1199px) {
+  .about-provider__info-text {
+    max-width: unset;
+  }
+  .about-provider__wrapper.about-provider__wrapper--service .about-provider__info {
+    display: block;
+  }
   .about-provider__wrapper.about-provider__wrapper--service {
     grid-template-columns: 1fr;
     row-gap: 40px;
