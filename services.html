@@ -9,18 +9,12 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/sections/greeting.css" />
-    <link rel="stylesheet" href="css/sections/achievements.css" />
-    <link rel="stylesheet" href="css/sections/transportation.css" />
+    <link rel="stylesheet" href="css/sections/about-greeting.css" />
+    <link rel="stylesheet" href="css/sections/main-services.css" />
     <link rel="stylesheet" href="css/sections/additional-services.css" />
-    <link rel="stylesheet" href="css/sections/provider-main.css" />
-    <link rel="stylesheet" href="css/sections/our-partners.css" />
-    <link rel="stylesheet" href="css/sections/last-news.css" />
-    <link rel="stylesheet" href="css/sections/container-section.css" />
-    <title>АнкоКорса</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--white">
       <div class="container">
         <div class="header__wrapper">
           <div class="header__phone-mobile">
@@ -40,6 +34,7 @@
           <div class="header__logo">
             <a href="">
               <img class="header__logo-image header__logo-image--default" src="images/logo-header.svg" alt="logo" />
+              <img class="header__logo-image header__logo-image--white" src="images/header-logo-white.svg" alt="logo" />
             </a>
           </div>
           <div class="header__block">
@@ -331,177 +326,83 @@
       </div>
     </header>
     <main class="main">
-      <section class="greeting">
-        <div class="greeting__wrapper">
-          <div class="greeting__image-mobile">
-            <img src="images/greeting-background-mobile.svg" alt="greeting-background" />
-          </div>
-          <div class="greeting__content">
+      <section class="about-greeting about-greeting--white">
+        <div class="about-greeting__wrapper">
+          <div class="about-greeting__block">
             <div class="container">
-              <div class="greeting__content-block">
-                <div class="greeting__content-info">
-                  <h2>перевозки грузов по всему миру</h2>
-                  <p>
-                    Железнодорожные, автомобильные перевозки грузов из географически отдаленных регионов Китая,
-                    Юго-Восточной Азии в Россию, Беларусь, Европу и обратно.
-                  </p>
-                  <button class="block-button greeting__content-button">Получить консультацию</button>
-                </div>
-                <div class="greeting__content-image">
-                  <img src="images/greeting-car.svg" alt="greeting-car" />
-                </div>
-              </div>
+              <h2>услуги</h2>
             </div>
           </div>
-          <div class="greeting__image">
-            <img src="images/greeting-background.jpg" alt="greeting-background" />
-          </div>
-          <div class="greeting__mouse">
-            <div class="greeting__mouse-block">
-              <span></span>
+          <div class="about-greeting__image">
+            <div class="container">
+              <div class="about-greeting__image-block">
+                <div class="about-greeting__image-line"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="achievements">
+      <section class="main-services">
         <div class="container">
-          <div class="achievements__wrapper">
-            <div class="achievements__info">
-              <h2 class="title achievements__info-title">наши достижения</h2>
-              <div class="achievements__info-text">
-                <p>
-                  Компания «АнкоКорса» с 2016 года занимается международными грузоперевозками. Основное направление
-                  нашей команды — экспортные перевозки из России в Европу. Мы заинтересованы в долгих и доверительных
-                  партнёрских отношениях, поэтому стремимся поддерживать сервис на таком уровне, чтобы каждый новый
-                  клиент без раздумий выбирал нашу команду на постоянное сотрудничество и был на 100% уверен
-                  в сохранности своего груза.
-                </p>
-                <a href="">Подробнее</a>
-              </div>
-            </div>
+          <div class="main-services__wrapper">
+            <h2 class="title">основные услуги</h2>
           </div>
         </div>
-        <div class="achievements__slider">
-          <div class="container achievements__slider-container">
-            <div class="swiper achievements__swiper">
+        <div class="main-services__slider">
+          <div class="container main-services__services">
+            <div class="swiper main-services__swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="achievements__slide">
-                    <h3>5 лет работы</h3>
-                    <p>С 2016 года поддерживаем высокое качество услуг международных грузоперевозок</p>
+                  <div class="main-services__slide">
+                    <a class="main-services__slide-link block-overlay" href=""></a>
+                    <div class="main-services__slide-overlay block-overlay"></div>
+                    <img src="images/main-services-1.jpg" alt="main-service" />
+                    <h3>Контейнерные перевозки автотранспортом</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" fill="none">
+                      <path
+                        d="M16.25 0L14.4875 1.71214L20.2125 7.28571H0V9.71429H20.2125L14.475 15.2879L16.25 17L25 8.5L16.25 0Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="achievements__slide">
-                    <h3>>1500 партнерских договоров</h3>
-                    <p>С 2016 года поддерживаем высокое качество услуг международных грузоперевозок</p>
+                  <div class="main-services__slide">
+                    <a class="main-services__slide-link block-overlay" href=""></a>
+                    <div class="main-services__slide-overlay block-overlay"></div>
+                    <img src="images/main-services-2.jpg" alt="main-service" />
+                    <h3>Контейнерные перевозки морским путем</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" fill="none">
+                      <path
+                        d="M16.25 0L14.4875 1.71214L20.2125 7.28571H0V9.71429H20.2125L14.475 15.2879L16.25 17L25 8.5L16.25 0Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="achievements__slide">
-                    <h3>Члены ассоциации БАМЭ</h3>
-                    <p>С 2016 года поддерживаем высокое качество услуг международных грузоперевозок</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="achievements__slide">
-                    <h3>Клиенты из ТОП-100 РБК</h3>
-                    <p>С 2016 года поддерживаем высокое качество услуг международных грузоперевозок</p>
+                  <div class="main-services__slide">
+                    <a class="main-services__slide-link block-overlay" href=""></a>
+                    <div class="main-services__slide-overlay block-overlay"></div>
+                    <img src="images/main-services-3.jpg" alt="main-service" />
+                    <h3>Контейнерные перевозки ж/д сообщением</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" fill="none">
+                      <path
+                        d="M16.25 0L14.4875 1.71214L20.2125 7.28571H0V9.71429H20.2125L14.475 15.2879L16.25 17L25 8.5L16.25 0Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="transportation">
-        <div class="transportation__wrapper">
-          <div class="transportation__wrapper-overlay block-overlay"></div>
-
-          <div class="transportation__wrapper-image">
-            <img src="images/transition-container.svg" alt="transition-container" />
-          </div>
-          <div class="container">
-            <div class="transportation__block">
-              <h2 class="title transportation__block-title">контейнерные перевозки</h2>
-              <ul class="transportation__block-list">
-                <li class="transportation__block-item">
-                  <div class="transportation__block-head">
-                    <div class="transportation__block-overlay block-overlay"></div>
-                    <h3>Перевозки автотранспортом</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path
-                        d="M3.24062 5.09375L1.76562 6.56875L10.0989 14.9021L18.4323 6.56875L16.9573 5.09375L10.0989 11.9521L3.24062 5.09375Z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="transportation__block-body">
-                    <p>
-                      Международные контейнерные перевозки грузов отвечают всем параметрам, необходимым для организации
-                      грамотной и эффективной доставки груза на большие расстояния. Жёсткий металлический каркас
-                      контейнера обеспечивает герметичность конструкции и надёжную защиту вашего груза от механических
-                      повреждений, а наличие закрывающей пломбы гарантирует его сохранность.
-                    </p>
-                    <a href="">Подробнее</a>
-                  </div>
-                </li>
-                <li class="transportation__block-item">
-                  <div class="transportation__block-head">
-                    <div class="transportation__block-overlay block-overlay"></div>
-                    <h3>Перевозки морским путём</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path
-                        d="M3.24062 5.09375L1.76562 6.56875L10.0989 14.9021L18.4323 6.56875L16.9573 5.09375L10.0989 11.9521L3.24062 5.09375Z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="transportation__block-body">
-                    <p>
-                      Международные контейнерные перевозки грузов отвечают всем параметрам, необходимым для организации
-                      грамотной и эффективной доставки груза на большие расстояния. Жёсткий металлический каркас
-                      контейнера обеспечивает герметичность конструкции и надёжную защиту вашего груза от механических
-                      повреждений, а наличие закрывающей пломбы гарантирует его сохранность.
-                    </p>
-                    <a href="">Подробнее</a>
-                  </div>
-                </li>
-                <li class="transportation__block-item">
-                  <div class="transportation__block-head">
-                    <div class="transportation__block-overlay block-overlay"></div>
-                    <h3>Перевозки железнодорожным сообщением</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path
-                        d="M3.24062 5.09375L1.76562 6.56875L10.0989 14.9021L18.4323 6.56875L16.9573 5.09375L10.0989 11.9521L3.24062 5.09375Z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="transportation__block-body">
-                    <p>
-                      Международные контейнерные перевозки грузов отвечают всем параметрам, необходимым для организации
-                      грамотной и эффективной доставки груза на большие расстояния. Жёсткий металлический каркас
-                      контейнера обеспечивает герметичность конструкции и надёжную защиту вашего груза от механических
-                      повреждений, а наличие закрывающей пломбы гарантирует его сохранность.
-                    </p>
-                    <a href="">Подробнее</a>
-                  </div>
-                </li>
-              </ul>
-              <a href="" class="transportation__block-button">Все услуги</a>
             </div>
           </div>
         </div>
       </section>
       <section class="additional-services">
         <div class="container">
-          <div class="additional-services__info">
+          <div class="additional-services__info additional-services__info--services">
             <h2 class="title">Дополнительные услуги</h2>
-            <div class="additional-services__info-text">
-              <p>
-                Мы заинтересованы в долгих и доверительных партнёрских отношениях, поэтому стремимся поддерживать сервис
-                на таком уровне, чтобы каждый новый клиент без раздумий выбирал нашу команду на постоянное
-                сотрудничество и был на 100% уверен в сохранности своего груза
-              </p>
-            </div>
           </div>
         </div>
         <div class="additional-services__slider">
@@ -569,177 +470,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="provider-main">
-        <div class="container">
-          <div class="provider-main__wrapper">
-            <div class="provider-main__content">
-              <div class="provider-main__content-overlay block-overlay"></div>
-              <div class="provider-main__content-block">
-                <div class="provider-main__content-logo">
-                  <img src="images/logo-provider.svg" alt="logo-provider" />
-                </div>
-                <ul class="provider-main__content-list">
-                  <li class="provider-main__content-item">
-                    <h3>Клиентоориентированный менеджмент</h3>
-                  </li>
-                  <li class="provider-main__content-item">
-                    <h3>Индивидуальный подход</h3>
-                  </li>
-                  <li class="provider-main__content-item">
-                    <h3>обширная география перевозок</h3>
-                  </li>
-                  <li class="provider-main__content-item">
-                    <h3>Слаженная команда профиссионалов</h3>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="provider-main__info">
-              <h2 class="title provider-main__info-title">Логистический провайдер</h2>
-              <p>
-                ООО "АнкоКорса" транспортно экспедиционная компания, которая помогает быстро и безопасно доставлять
-                грузы в Европу.
-              </p>
-              <a class="provider-main__info-link" href="">Подробнее о компании</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="our-partners">
-        <div class="container">
-          <div class="our-partners__wrapper">
-            <h2 class="title">наши партнеры</h2>
-            <div class="our-partners__wrapper-text">
-              <p>
-                Наши партнёры - мировые лидеры в своих отраслях: металлургия, строительные материалы,
-                деревоперерабатывающая промышленность. Искренне гордимся тем, что наша команда уже который год повышает
-                уровень доверия партнёров и делает всё, чтобы сотрудничество приносило только положительные впечатления
-                и развивалось. Будем рады видеть вашу компанию среди наших партнёров!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="our-partners__slider">
-          <div class="container our-partners__container">
-            <div class="swiper our-partners__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="our-partners__slide">
-                    <img src="images/partners-logo-1.svg" alt="partners-logo" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="our-partners__slide">
-                    <a class="block-overlay" href=""></a>
-                    <img src="images/partners-logo-2.svg" alt="partners-logo" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="our-partners__slide">
-                    <a class="block-overlay" href=""></a>
-                    <img src="images/partners-logo-3.svg" alt="partners-logo" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="our-partners__slide">
-                    <a class="block-overlay" href=""></a>
-                    <img src="images/partners-logo-2.svg" alt="partners-logo" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="our-partners__slide">
-                    <a class="block-overlay" href=""></a>
-                    <img src="images/partners-logo-3.svg" alt="partners-logo" />
-                  </div>
-                </div>
-                <div class="swiper-slide swiper-slide--partner">
-                  <div class="our-partners__slide our-partners__slide--partner">
-                    <a class="block-overlay" href=""></a>
-                    <span>Стать партнером</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="our-partners__control">
-          <a class="our-partners__control-button" href="">Стать партнером</a>
-        </div>
-      </section>
-      <section class="last-news">
-        <div class="container">
-          <div class="last-news__wrapper">
-            <h2 class="title last-news__title">последние новости</h2>
-            <ul class="last-news__list">
-              <li class="last-news__item">
-                <div class="last-news__head">
-                  <div class="last-news__head-overlay block-overlay"></div>
-                  <span class="last-news__head-date">22 июня 2023</span>
-                  <div class="last-news__head-block">
-                    <h3 class="last-news__head-name">"АнкоКорса" член ассоциации БАМЭ</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path
-                        d="M3.24062 5.09375L1.76562 6.56875L10.0989 14.9021L18.4323 6.56875L16.9573 5.09375L10.0989 11.9521L3.24062 5.09375Z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="last-news__body">
-                  <div class="last-news__body-image">
-                    <img src="images/last-image-1.jpg" alt="last-news" />
-                  </div>
-                  <div class="last-news__body-info">
-                    <p>
-                      Международные контейнерные перевозки грузов отвечают всем параметрам, необходимым для организации
-                      грамотной и эффективной доставки груза на большие расстояния. Жёсткий металлический каркас
-                      контейнера обеспечивает герметичность конструкции и надёжную защиту вашего груза от механических
-                      повреждений, а наличие закрывающей пломбы гарантирует его сохранность.
-                    </p>
-                    <a href="">Подробнее</a>
-                  </div>
-                </div>
-              </li>
-              <li class="last-news__item">
-                <div class="last-news__head">
-                  <div class="last-news__head-overlay block-overlay"></div>
-                  <span class="last-news__head-date">22 июня 2023</span>
-                  <div class="last-news__head-block">
-                    <h3 class="last-news__head-name">"АнкоКорса" член ассоциации БАМЭ</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                      <path
-                        d="M3.24062 5.09375L1.76562 6.56875L10.0989 14.9021L18.4323 6.56875L16.9573 5.09375L10.0989 11.9521L3.24062 5.09375Z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="last-news__body">
-                  <div class="last-news__body-image">
-                    <img src="images/last-image-1.jpg" alt="last-news" />
-                  </div>
-                  <div class="last-news__body-info">
-                    <p>
-                      Международные контейнерные перевозки грузов отвечают всем параметрам, необходимым для организации
-                      грамотной и эффективной доставки груза на большие расстояния. Жёсткий металлический каркас
-                      контейнера обеспечивает герметичность конструкции и надёжную защиту вашего груза от механических
-                      повреждений, а наличие закрывающей пломбы гарантирует его сохранность.
-                    </p>
-                    <a href="">Подробнее</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="container-section">
-        <div class="container">
-          <div class="container-section__wrapper">
-            <div class="container-section__image">
-              <img src="images/container-section.svg" alt="container-section" />
             </div>
           </div>
         </div>
@@ -850,10 +580,7 @@
     <div class="overlay hidden"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script/header.js"></script>
-    <script src="script/sections/achievements.js"></script>
-    <script src="script/sections/transportation.js"></script>
+    <script src="script/sections/main-services.js"></script>
     <script src="script/sections/additional-services.js"></script>
-    <script src="script/sections/our-partners.js"></script>
-    <script src="script/sections/last-news.js"></script>
   </body>
 </html>
