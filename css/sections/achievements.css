@@ -117,6 +117,12 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+@media (max-width: 1500px) {
+  .achievements__info {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}
 @media (max-width: 1450px) {
   .achievements__slider-container.container {
     height: 238px;

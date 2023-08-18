@@ -54,7 +54,7 @@
   font-weight: 500;
   line-height: 140%;
 }
-@media (max-width: 990px) {
+@media (max-width: 1500px) {
   .our-partners__wrapper {
     grid-template-columns: 1fr;
     row-gap: 24px;

@@ -52,7 +52,7 @@
 .additional-services__container {
   position: relative;
 }
-@media (max-width: 990px) {
+@media (max-width: 1500px) {
   .additional-services__info {
     grid-template-columns: 1fr;
     row-gap: 24px;
