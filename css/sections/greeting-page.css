@@ -2,6 +2,9 @@
   position: relative;
   background-color: #000;
 }
+.greeting-page--services .greeting-page__wrapper {
+  background-color: #fff;
+}
 .greeting-page__block {
   padding-top: 184px;
   padding-bottom: 128px;
@@ -45,7 +48,9 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
 }
-
+.greeting-page--services .greeting-page__block h2 {
+  color: #000;
+}
 .greeting-page--white .greeting-page__block h2 {
   color: #000;
 }
