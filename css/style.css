@@ -15,11 +15,15 @@ main {
 .visible {
   display: block !important;
 }
+.hidden {
+  display: none !important;
+}
 .body-overlay {
   overflow-y: hidden;
   margin-right: var(--scrollbar-width);
 }
-.overlay {
+.overlay,
+.overlay-modal {
   display: none;
   position: fixed;
   left: 0;
@@ -32,6 +36,10 @@ main {
   cursor: pointer;
   background: #000;
   opacity: 0.3;
+}
+.overlay-modal {
+  z-index: 99;
+  display: block;
 }
 .block-overlay {
   position: absolute;
