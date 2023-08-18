@@ -9,7 +9,8 @@
   transition: 0.5s ease;
 }
 .header--white .header__logo-image--default,
-.header--white.header--menu .header__logo-image--white {
+.header--white.header--menu .header__logo-image--white,
+.header .header__logo-image--white {
   display: none;
 }
 .header--white .header__logo-image--white,
