@@ -59,6 +59,11 @@
   font-size: 40px;
   font-weight: 600;
 }
+@media (max-width: 1400px) {
+  .greeting-page--confidentiality.greeting-page--services .greeting-page__block h2 {
+    font-size: 31px;
+  }
+}
 @media (max-width: 990px) {
   .greeting-page__block.greeting-page__block--service h2,
   .greeting-page--services .greeting-page__block h2 {
@@ -93,8 +98,15 @@
   .greeting-page--detail .greeting-page__image {
     height: 246px;
   }
+  .greeting-page--confidentiality.greeting-page--services .greeting-page__block h2 {
+    font-size: 23px;
+  }
 }
+
 @media (max-width: 410px) {
+  .greeting-page--confidentiality.greeting-page--services .greeting-page__block h2 {
+    font-size: 20px;
+  }
   .greeting-page__block.greeting-page__block--service h2 {
     font-size: 25px;
   }
