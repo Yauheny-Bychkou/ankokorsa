@@ -1,14 +1,14 @@
 .about-greeting__wrapper {
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .about-greeting__block {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+  position: relative;
+  z-index: 5;
   padding-top: 184px;
+  padding-bottom: 128px;
 }
 .about-greeting--detail .about-greeting__block {
   padding-top: 150px;
@@ -83,6 +83,7 @@
   }
   .about-greeting__block {
     padding-top: 112px;
+    padding-bottom: 82px;
   }
   .about-greeting__block h2 {
     font-size: 31px;
