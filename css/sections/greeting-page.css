@@ -51,21 +51,23 @@
 .greeting-page--services .greeting-page__block h2 {
   color: #000;
 }
+
 .greeting-page--white .greeting-page__block h2 {
   color: #000;
 }
-.greeting-page--detail.greeting-page--white .greeting-page__block h2 span {
+.greeting-page--services .greeting-page__block h2 span {
   font-size: 40px;
   font-weight: 600;
 }
 @media (max-width: 990px) {
-  .greeting-page__block.greeting-page__block--service h2 {
+  .greeting-page__block.greeting-page__block--service h2,
+  .greeting-page--services .greeting-page__block h2 {
     font-size: 31px;
   }
   .greeting-page--detail .greeting-page__block h2 {
     font-size: 31px;
   }
-  .greeting-page--detail.greeting-page--white .greeting-page__block h2 span {
+  .greeting-page--services .greeting-page__block h2 span {
     font-size: 24px;
     font-weight: 600;
   }
@@ -81,7 +83,8 @@
     padding-top: 112px;
     padding-bottom: 80px;
   }
-  .greeting-page__block h2 {
+  .greeting-page__block h2,
+  .greeting-page--services .greeting-page__block h2 {
     font-size: 31px;
   }
   .greeting-page__image {
@@ -95,10 +98,11 @@
   .greeting-page__block.greeting-page__block--service h2 {
     font-size: 25px;
   }
-  .greeting-page--detail .greeting-page__block h2 {
+  .greeting-page--detail .greeting-page__block h2,
+  .greeting-page--services .greeting-page__block h2 {
     font-size: 23px;
   }
-  .greeting-page--detail.greeting-page--white .greeting-page__block h2 span {
+  .greeting-page--services .greeting-page__block h2 span {
     font-size: 18px;
     font-weight: 600;
   }
