@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/sections/about-greeting.css" />
+    <link rel="stylesheet" href="css/sections/greeting-page.css" />
+    <link rel="stylesheet" href="css/sections/contacts-section.css" />
   </head>
   <body>
     <header class="header">
@@ -323,25 +324,64 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <section class="about-greeting">
-        <div style="background-image: url(/images/transportation-background.jpg)" class="about-greeting__wrapper">
-          <div class="about-greeting__block">
-            <div class="container">
-              <h2>услуги</h2>
+    <main class="main main--contacts">
+      <section class="greeting-page">
+        <div class="greeting-page__wrapper">
+          <div class="container">
+            <div class="greeting-page__block">
+              <h2>контакты</h2>
             </div>
           </div>
-          <!-- <div class="about-greeting__image">
-            <div class="container">
-              <div class="about-greeting__image-block">
-                <div class="about-greeting__image-line"></div>
+        </div>
+      </section>
+      <section class="contacts-section">
+        <div class="contacts-section__wrapper">
+          <div class="container">
+            <div class="contacts-section__container">
+              <div class="contacts-section__block">
+                <h3>режим работы</h3>
+                <ul>
+                  <li>Пн. – Пт.: с 9:00 до 18:00</li>
+                </ul>
+              </div>
+              <div class="contacts-section__block">
+                <h3>телефоны</h3>
+                <ul>
+                  <li>
+                    <a class="block-overlay" href=""></a>
+                    +375(163) 67 68 83
+                  </li>
+                  <li>
+                    <a class="block-overlay" href=""></a>
+                    +375 (29) 144 40 29
+                  </li>
+                  <li><a class="block-overlay" href=""></a>+7 985 477 36 36</li>
+                </ul>
+              </div>
+              <div class="contacts-section__block">
+                <h3>Email</h3>
+                <ul>
+                  <li>
+                    <a class="block-overlay" href=""></a>
+                    info@ankokorsa.com
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts-section__block">
+                <h3>адрес</h3>
+                <ul>
+                  <li>Республик Беларусь, Брестская обл., г. Барановичи, ул. Куйбышева 111, оф. 210</li>
+                </ul>
               </div>
             </div>
-          </div> -->
+            <div class="contacts-section__map">
+              <div id="map" style="width: 100%; height: 100%"></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--contacts">
       <div class="footer__wrapper">
         <div class="footer__wrappeer-overlay block-overlay"></div>
         <div class="footer__block">
@@ -445,6 +485,31 @@
     </footer>
     <div class="overlay hidden"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=6f407928-1ce8-497c-bc40-aecaf4471a3f&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <script src="script/header.js"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        const myMap = new ymaps.Map("map", {
+          center: [53.900581, 27.558995],
+          zoom: 15,
+        });
+
+        myMap.geoObjects.add(
+          new ymaps.Placemark(
+            [53.900581, 27.558995],
+            {
+              balloonContent: "Центр Минска",
+            },
+            {
+              iconColor: "#E06618",
+            }
+          )
+        );
+      }
+    </script>
   </body>
 </html>

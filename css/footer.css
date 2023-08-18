@@ -8,6 +8,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.footer--contacts .footer__wrapper {
+  background-image: none;
+  background-color: #000;
+  border-top: 1px solid rgba(156, 163, 175, 0.3);
+}
 .footer__wrappeer-overlay {
   background-color: #000;
   opacity: 0.9;

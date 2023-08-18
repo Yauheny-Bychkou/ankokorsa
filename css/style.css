@@ -9,6 +9,9 @@ main {
   min-height: calc(100vh - 416px);
   overflow: hidden;
 }
+.main--contacts {
+  background-color: #000;
+}
 .visible {
   display: block !important;
 }
