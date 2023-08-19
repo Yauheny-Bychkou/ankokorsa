@@ -239,7 +239,7 @@
                 </li>
               </ul>
             </div>
-            <button class="block-button header__request">Запрос ставки</button>
+            <button data-modal="calculation" class="block-button header__request button-modal">Запрос ставки</button>
           </div>
           <div class="header__burger">
             <div class="burger">
@@ -780,7 +780,103 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal--consultation hidden">
+    <div style="opacity: 0" class="modal modal--calculation">
+      <form action="">
+        <div class="modal__scroll">
+          <div class="modal__wrapper">
+            <div class="modal__close">
+              <div class="modal__close-block">
+                <div class="block-overlay modal__close-overlay"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <g clip-path="url(#clip0_20_3829)">
+                    <path
+                      d="M19.4688 6.87875L18.0588 5.46875L12.4688 11.0588L6.87875 5.46875L5.46875 6.87875L11.0588 12.4688L5.46875 18.0588L6.87875 19.4688L12.4688 13.8787L18.0588 19.4688L19.4688 18.0588L13.8787 12.4688L19.4688 6.87875Z"
+                      fill="#212121"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_20_3829">
+                      <rect width="24" height="24" fill="white" transform="translate(0.46875 0.46875)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h3 class="modal__title">Получить консультацию</h3>
+            <p class="modal__description">Время обработки заявок с 9:00 до 18:00</p>
+            <div class="modal__block">
+              <div class="modal__input">
+                <input type="text" placeholder="Компания*" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="E-mail*" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Имя/Фамилия*" />
+              </div>
+              <div class="modal__input modal__input--phone">
+                <div class="modal__phone-select">
+                  <img src="images/flag-by.svg" alt="flag" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+                    <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#111827" />
+                  </svg>
+                </div>
+
+                <input type="text" placeholder="+375*" />
+              </div>
+              <div class="modal__input modal__input--select">
+                <span class="modal__input-name">Тип транспорта*</span>
+                <div class="modal__select">
+                  <div class="modal__select-head">
+                    <div class="block-overlay modal__select-overlay"></div>
+                    <input type="text" placeholder="Выберите тип" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                      <path d="M5 6L9.33013 0.75H0.669873L5 6Z" fill="#111827" />
+                    </svg>
+                  </div>
+                  <ul class="modal__select-list">
+                    <li class="modal__select-item">Контейнер 20 фут</li>
+                    <li class="modal__select-item">Контейнер 40 фут</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Наименование груза" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Вес груза" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Откуда (страна/город)" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Куда (страна/город)" />
+              </div>
+            </div>
+            <textarea class="modal__textarea" placeholder="Ваш комментарий"></textarea>
+            <label class="modal__agree">
+              <div class="modal__agree-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10 0.562275L3.41629 8L0 4.14057L0.497713 3.57829L3.41629 6.87545L9.50229 0L10 0.562275Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <input type="checkbox" />
+              <p>
+                Я согласен с условиями <a href="">Политики конфиденциальности</a> и
+                <a href="">Обработки персональных данных.</a>
+              </p>
+            </label>
+            <button class="block-button modal__button modal__button--submit" type="submit">Получить расчет</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div style="opacity: 0" class="modal modal--consultation">
       <form action="">
         <div class="modal__wrapper">
           <div class="modal__close">
@@ -833,12 +929,12 @@
                 <a href="">Обработки персональных данных.</a>
               </p>
             </label>
-            <button class="block-button modal__button modal__button--calculation" type="submit">Получить расчет</button>
+            <button class="block-button modal__button modal__button--submit" type="submit">Получить расчет</button>
           </div>
         </div>
       </form>
     </div>
-    <div class="modal modal--success hidden">
+    <div style="opacity: 0" class="modal modal--success">
       <div class="modal__wrapper">
         <div class="modal__close">
           <div class="modal__close-block">
@@ -870,7 +966,7 @@
         <p class="modal__message">Ваша заявка успешно отправлена.</p>
       </div>
     </div>
-    <div class="modal modal--error hidden">
+    <div style="opacity: 0" class="modal modal--error">
       <div class="modal__wrapper">
         <div class="modal__close">
           <div class="modal__close-block">

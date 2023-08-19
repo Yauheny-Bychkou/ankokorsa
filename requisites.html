@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/sections/greeting-page.css" />
     <link rel="stylesheet" href="css/sections/requisites.css" />
+    <link rel="stylesheet" href="css/sections/modal.css" />
   </head>
   <body>
     <header class="header header--white">
@@ -234,7 +235,7 @@
                 </li>
               </ul>
             </div>
-            <button class="block-button header__request">Запрос ставки</button>
+            <button data-modal="calculation" class="block-button header__request button-modal">Запрос ставки</button>
           </div>
           <div class="header__burger">
             <div class="burger">
@@ -488,8 +489,229 @@
         </div>
       </div>
     </footer>
+    <div style="opacity: 0" class="modal modal--calculation">
+      <form action="">
+        <div class="modal__scroll">
+          <div class="modal__wrapper">
+            <div class="modal__close">
+              <div class="modal__close-block">
+                <div class="block-overlay modal__close-overlay"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <g clip-path="url(#clip0_20_3829)">
+                    <path
+                      d="M19.4688 6.87875L18.0588 5.46875L12.4688 11.0588L6.87875 5.46875L5.46875 6.87875L11.0588 12.4688L5.46875 18.0588L6.87875 19.4688L12.4688 13.8787L18.0588 19.4688L19.4688 18.0588L13.8787 12.4688L19.4688 6.87875Z"
+                      fill="#212121"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_20_3829">
+                      <rect width="24" height="24" fill="white" transform="translate(0.46875 0.46875)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <h3 class="modal__title">Получить консультацию</h3>
+            <p class="modal__description">Время обработки заявок с 9:00 до 18:00</p>
+            <div class="modal__block">
+              <div class="modal__input">
+                <input type="text" placeholder="Компания*" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="E-mail*" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Имя/Фамилия*" />
+              </div>
+              <div class="modal__input modal__input--phone">
+                <div class="modal__phone-select">
+                  <img src="images/flag-by.svg" alt="flag" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+                    <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#111827" />
+                  </svg>
+                </div>
+
+                <input type="text" placeholder="+375*" />
+              </div>
+              <div class="modal__input modal__input--select">
+                <span class="modal__input-name">Тип транспорта*</span>
+                <div class="modal__select">
+                  <div class="modal__select-head">
+                    <div class="block-overlay modal__select-overlay"></div>
+                    <input type="text" placeholder="Выберите тип" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                      <path d="M5 6L9.33013 0.75H0.669873L5 6Z" fill="#111827" />
+                    </svg>
+                  </div>
+                  <ul class="modal__select-list">
+                    <li class="modal__select-item">Контейнер 20 фут</li>
+                    <li class="modal__select-item">Контейнер 40 фут</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Наименование груза" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Вес груза" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Откуда (страна/город)" />
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="Куда (страна/город)" />
+              </div>
+            </div>
+            <textarea class="modal__textarea" placeholder="Ваш комментарий"></textarea>
+            <label class="modal__agree">
+              <div class="modal__agree-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10 0.562275L3.41629 8L0 4.14057L0.497713 3.57829L3.41629 6.87545L9.50229 0L10 0.562275Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <input type="checkbox" />
+              <p>
+                Я согласен с условиями <a href="">Политики конфиденциальности</a> и
+                <a href="">Обработки персональных данных.</a>
+              </p>
+            </label>
+            <button class="block-button modal__button modal__button--submit" type="submit">Получить расчет</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div style="opacity: 0" class="modal modal--consultation">
+      <form action="">
+        <div class="modal__wrapper">
+          <div class="modal__close">
+            <div class="modal__close-block">
+              <div class="block-overlay modal__close-overlay"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <g clip-path="url(#clip0_20_3829)">
+                  <path
+                    d="M19.4688 6.87875L18.0588 5.46875L12.4688 11.0588L6.87875 5.46875L5.46875 6.87875L11.0588 12.4688L5.46875 18.0588L6.87875 19.4688L12.4688 13.8787L18.0588 19.4688L19.4688 18.0588L13.8787 12.4688L19.4688 6.87875Z"
+                    fill="#212121"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_3829">
+                    <rect width="24" height="24" fill="white" transform="translate(0.46875 0.46875)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <h3 class="modal__title">Получить консультацию</h3>
+          <p class="modal__description">Время обработки заявок с 9:00 до 18:00</p>
+          <div class="modal__block">
+            <div class="modal__input">
+              <input type="text" placeholder="Имя/Фамилия*" />
+            </div>
+            <div class="modal__input modal__input--phone">
+              <div class="modal__phone-select">
+                <img src="images/flag-by.svg" alt="flag" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" fill="none">
+                  <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#111827" />
+                </svg>
+              </div>
+              <input type="text" placeholder="+375*" />
+            </div>
+            <label class="modal__agree">
+              <div class="modal__agree-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10 0.562275L3.41629 8L0 4.14057L0.497713 3.57829L3.41629 6.87545L9.50229 0L10 0.562275Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <input type="checkbox" />
+              <p>
+                Я согласен с условиями <a href="">Политики конфиденциальности</a> и
+                <a href="">Обработки персональных данных.</a>
+              </p>
+            </label>
+            <button class="block-button modal__button modal__button--submit" type="submit">Получить расчет</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div style="opacity: 0" class="modal modal--success">
+      <div class="modal__wrapper">
+        <div class="modal__close">
+          <div class="modal__close-block">
+            <div class="block-overlay modal__close-overlay"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <g clip-path="url(#clip0_20_3829)">
+                <path
+                  d="M19.4688 6.87875L18.0588 5.46875L12.4688 11.0588L6.87875 5.46875L5.46875 6.87875L11.0588 12.4688L5.46875 18.0588L6.87875 19.4688L12.4688 13.8787L18.0588 19.4688L19.4688 18.0588L13.8787 12.4688L19.4688 6.87875Z"
+                  fill="#212121"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_20_3829">
+                  <rect width="24" height="24" fill="white" transform="translate(0.46875 0.46875)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__sign">
+          <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+            <path
+              d="M19.5005 35.0995L10.4005 25.9995L7.36719 29.0328L19.5005 41.1661L45.5005 15.1661L42.4672 12.1328L19.5005 35.0995Z"
+              fill="#6CFF6C"
+            />
+          </svg>
+        </div>
+        <h3 class="modal__title">спасибо!</h3>
+        <p class="modal__message">Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+    <div style="opacity: 0" class="modal modal--error">
+      <div class="modal__wrapper">
+        <div class="modal__close">
+          <div class="modal__close-block">
+            <div class="block-overlay modal__close-overlay"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <g clip-path="url(#clip0_20_3829)">
+                <path
+                  d="M19.4688 6.87875L18.0588 5.46875L12.4688 11.0588L6.87875 5.46875L5.46875 6.87875L11.0588 12.4688L5.46875 18.0588L6.87875 19.4688L12.4688 13.8787L18.0588 19.4688L19.4688 18.0588L13.8787 12.4688L19.4688 6.87875Z"
+                  fill="#212121"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_20_3829">
+                  <rect width="24" height="24" fill="white" transform="translate(0.46875 0.46875)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__sign">
+          <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
+            <path
+              d="M41.6693 13.8831L38.6143 10.8281L26.5026 22.9398L14.3909 10.8281L11.3359 13.8831L23.4476 25.9948L11.3359 38.1065L14.3909 41.1615L26.5026 29.0498L38.6143 41.1615L41.6693 38.1065L29.5576 25.9948L41.6693 13.8831Z"
+              fill="#DC2626"
+            />
+          </svg>
+        </div>
+        <h3 class="modal__title">ошибка отправки!</h3>
+        <p class="modal__message">Произошла ошибка отправки заявки.</p>
+        <button class="modal__again">Попробуйте ещё раз.</button>
+      </div>
+    </div>
+    <div class="overlay-modal hidden"></div>
     <div class="overlay hidden"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script/header.js"></script>
+    <script src="script/sections/modal.js"></script>
   </body>
 </html>

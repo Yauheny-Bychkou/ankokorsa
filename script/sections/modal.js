@@ -25,10 +25,10 @@ const initShowModal = () => {
       showModal(e.target.dataset.modal);
     } else if (e.target.classList.contains("overlay-modal") || e.target.classList.contains("modal__close-overlay")) {
       closeAllModal();
-    } else if (e.target.classList.contains("modal__button--calculation")) {
+    } else if (e.target.classList.contains("modal__button--submit")) {
       e.preventDefault();
       closeAllModal();
-      showModal("success");
+      showModal("error");
     }
   });
 };
@@ -39,7 +39,7 @@ const showModal = (selectorModal) => {
   const body = document.querySelector("body");
 
   body.classList.add("body-overlay");
-  modal.classList.remove("hidden");
+  modal.classList.add("modal--visible");
   modalOverlay.classList.remove("hidden");
 };
 
@@ -51,10 +51,28 @@ const closeAllModal = () => {
   body.classList.remove("body-overlay");
   modalOverlay.classList.add("hidden");
   collectionModal.forEach((modal) => {
-    modal.classList.add("hidden");
+    modal.classList.remove("modal--visible");
   });
 };
 
+const initSelectModal = () => {
+  const select = document.querySelector(".modal__select");
+  const valueSelect = document.querySelector(".modal__select input");
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("modal__select-overlay")) {
+      select.classList.toggle("modal__select--active");
+    } else if (e.target.classList.contains("modal__select-item")) {
+      valueSelect.value = e.target.textContent;
+      select.classList.remove("modal__select--active");
+    } else {
+      select.classList.remove("modal__select--active");
+    }
+  });
+};
+
+if (document.querySelector(".modal__select")) {
+  initSelectModal();
+}
 if (document.querySelector(".modal__agree")) {
   initCheckBoxAgree();
 }

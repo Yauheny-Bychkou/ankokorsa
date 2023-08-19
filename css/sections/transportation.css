@@ -29,7 +29,7 @@
   z-index: 5;
   background-color: #fff;
   border-radius: 8px;
-  /* min-height: 866px; */
+  min-height: 866px;
   padding: 70px 60px 92px 60px;
 }
 .transportation__block-title {
