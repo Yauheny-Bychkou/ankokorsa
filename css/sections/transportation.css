@@ -131,7 +131,19 @@
   }
 }
 @media (max-width: 1400px) {
-  .transportation__block {
+  .transportation__block-title {
+    max-width: 300px;
+  }
+
+}
+@media (max-width: 1300px) {
+  .transportation__block-list,
+  .transportation__block-button {
+    width: 510px;
+  }
+}
+@media (max-width: 1023px) {
+   .transportation__block {
     min-height: unset;
   }
   .transportation__block-list {
@@ -140,6 +152,7 @@
   .transportation__block-title {
     width: 100%;
     text-align: left;
+    max-width: unset;
   }
   .transportation__wrapper-image {
     display: none;
