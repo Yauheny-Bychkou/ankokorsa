@@ -66,6 +66,9 @@
     row-gap: 20px;
     column-gap: 20px;
   }
+  .product-section__card h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   .product-section__wrapper {
@@ -79,7 +82,6 @@
   }
   .product-section__card h3 {
     font-size: 20px;
-    text-align: center;
   }
   .product-section__card {
     padding: 17px 20px;

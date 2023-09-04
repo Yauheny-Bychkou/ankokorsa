@@ -55,7 +55,12 @@
   .about-provider__info-text {
     max-width: unset;
   }
-  .about-provider__wrapper.about-provider__wrapper--service .about-provider__info {
+  .about-provider__wrapper.about-provider__wrapper--service {
+     grid-template-columns: minmax(0, 300px) 1fr;
+  }
+}
+@media (max-width: 1023px) {
+    .about-provider__wrapper.about-provider__wrapper--service .about-provider__info {
     display: block;
   }
   .about-provider__wrapper.about-provider__wrapper--service {
@@ -67,7 +72,6 @@
     max-height: 520px;
   }
 }
-
 @media (max-width: 990px) {
   .about-provider__wrapper {
     row-gap: 30px;
