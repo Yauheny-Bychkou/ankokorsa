@@ -130,7 +130,7 @@
     width: 40%;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .transportation__block {
     min-height: unset;
   }

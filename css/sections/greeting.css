@@ -173,7 +173,6 @@
   }
   .greeting__content-block {
     flex-direction: column;
-    align-items: center;
   }
   .greeting__content-info h2 {
     max-width: 600px;

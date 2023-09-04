@@ -11,6 +11,7 @@
 .achievements__info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  
   margin-bottom: 40px;
   color: #212121;
 }
@@ -127,15 +128,7 @@
     font-size: 24px;
   }
  }
-@media (max-width: 1500px) {
-  .achievements__info-title {
-    padding-right: 0px;
-  }
-  .achievements__info {
-    grid-template-columns: 1fr;
-    row-gap: 24px;
-  }
-}
+
 @media (max-width: 1450px) {
   .achievements__slider-container.container {
     height: 238px;
@@ -147,6 +140,15 @@
 @media (max-width: 1199px) {
   .achievements__info {
     column-gap: 60px;
+  }
+}
+@media (max-width: 1023px) {
+  .achievements__info-title {
+    padding-right: 0px;
+  }
+  .achievements__info {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
   }
 }
 @media (max-width: 767px) {

@@ -274,17 +274,15 @@
   .header__block {
     column-gap: 20px;
   }
-  .header__nav-list {
+  /* .header__nav-list {
     column-gap: 20px;
-  }
+  } */
 }
 @media (max-width: 1650px) {
   .header__block {
     column-gap: 10px;
   }
-  .header__nav-list {
-    column-gap: 10px;
-  }
+  /* */
   .header__request.block-button {
     padding: 16px 30px;
   }
@@ -298,7 +296,27 @@
     font-size: 14px;
   }
 }
+@media (max-width: 1300px) {
+  .header__nav-list {
+    column-gap: 10px;
+  } 
+}
 @media (max-width: 1199px) {
+  .header__logo {
+    width: 150px;
+  }
+  .header__nav-head span,
+  .header__phone-value,
+  .header__localization-value,
+  .header__request {
+    font-size: 12px;
+  }
+  .header__request.block-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1023px) {
   .header-menu {
     display: block;
     position: fixed;
