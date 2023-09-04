@@ -30,6 +30,8 @@ const initShowModal = () => {
       e.preventDefault();
       closeAllModal();
       showModal("error");
+    } else if(e.target.classList.contains('modal__again')) {
+        location.reload();
     }
   });
 };
