@@ -66,6 +66,12 @@
     row-gap: 24px;
   }
 }
+@media (max-width: 1023px) {
+  .additional-services__info .title {
+    max-width: 330px;
+  }
+}
+
 @media (max-width: 767px) {
   .additional-services__slide {
     padding: 20px;

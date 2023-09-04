@@ -46,6 +46,7 @@
 .achievements__slider-container.container {
   position: relative;
   height: 238px;
+  max-width: calc(75.85vw + 40px);
 }
 
 .achievements__slide {
@@ -132,9 +133,10 @@
 @media (max-width: 1450px) {
   .achievements__slider-container.container {
     height: 238px;
+    max-width: calc(85.85vw + 40px);
   }
    .achievements__slide h3 {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 @media (max-width: 1199px) {
@@ -151,9 +153,15 @@
     row-gap: 24px;
   }
 }
+@media (max-width: 990px) {
+  .achievements__info-title {
+    max-width: 330px;
+   }
+}
 @media (max-width: 767px) {
   .achievements--service .achievements__swiper .swiper-slide,
-  .achievements__slider--about .achievements__swiper .swiper-slide {
+  .achievements__slider--about .achievements__swiper .swiper-slide,
+  .achievements__swiper .swiper-slide {
     width: 296px;
   }
   .achievements__slider--service .achievements__slide p {

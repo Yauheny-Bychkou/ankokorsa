@@ -120,8 +120,6 @@
   .last-news__head-block {
     column-gap: 20px;
   }
-}
-@media (max-width: 767px) {
   .last-news__head {
     padding: 20px 20px 80px 20px;
     transition: 0.5s ease;
@@ -145,6 +143,11 @@
     bottom: 12px;
     transition: 0.5s ease;
   }
+   .last-news__wrapper {
+    padding-bottom: 80px;
+  }  
+}
+@media (max-width: 767px) {
   .last-news__head-date {
     font-size: 14px;
   }
@@ -155,7 +158,5 @@
   .last-news__body-info a {
     font-size: 16px;
   }
-  .last-news__wrapper {
-    padding-bottom: 80px;
-  }
+ 
 }

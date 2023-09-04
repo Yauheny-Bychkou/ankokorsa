@@ -191,7 +191,10 @@
   }
   .footer__nav {
     column-gap: 20px;
-    justify-content: flex-start;
+    justify-content: space-between;
+  }
+  .footer__nav-block--links {
+    right: 0;
   }
   .footer__contacts {
     column-gap: 139px;

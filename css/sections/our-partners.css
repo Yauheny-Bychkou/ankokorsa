@@ -54,6 +54,14 @@
   font-weight: 500;
   line-height: 140%;
 }
+.our-partners__container {
+  max-width: calc(75.85vw + 40px);
+}
+@media (max-width: 1450px) {
+  .our-partners__container {
+    max-width: calc(85.85vw + 40px);
+  }
+}
 @media (max-width: 1023px) {
   .our-partners__wrapper {
     grid-template-columns: 1fr;
@@ -67,6 +75,7 @@
   .our-partners__container {
     position: relative;
     height: 220px;
+    max-width: 100vw;
   }
   .our-partners__swiper {
     position: absolute;
