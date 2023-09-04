@@ -40,18 +40,22 @@ const showModal = (selectorModal) => {
   const modal = document.querySelector(`.modal--${selectorModal}`);
   const modalOverlay = document.querySelector(".overlay-modal");
   const body = document.querySelector("body");
+  const header = document.querySelector('.header');
 
   body.classList.add("body-overlay");
   modal.classList.add("modal--visible");
   modalOverlay.classList.remove("hidden");
+  header.classList.add('header--overlay');
 };
 
 const closeAllModal = () => {
   const collectionModal = document.querySelectorAll(".modal");
   const modalOverlay = document.querySelector(".overlay-modal");
   const body = document.querySelector("body");
+  const header = document.querySelector('.header');
 
   body.classList.remove("body-overlay");
+  header.classList.remove('header--overlay');
   modalOverlay.classList.add("hidden");
   collectionModal.forEach((modal) => {
     modal.classList.remove("modal--visible");
