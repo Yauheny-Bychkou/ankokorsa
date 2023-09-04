@@ -64,6 +64,17 @@
 .main-services__slide-link {
   z-index: 6;
 }
+.main-services--detail .main-services__slide img{
+  position: relative;
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+@media (min-width: 1023px) {
+  .main-services--detail .main-services__slide:hover img{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+  }
+}
 @media (max-width: 767px) {
   .main-services__services {
     position: relative;

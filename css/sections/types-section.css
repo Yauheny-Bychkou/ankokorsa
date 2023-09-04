@@ -168,6 +168,11 @@
     max-width: unset;
   }
 }
+@media (max-width: 990px) {
+  .types-section__card-block {
+    padding: 37px;
+  }
+}
 @media (max-width: 767px) {
   .types-section__block {
     padding: 30px 20px;
