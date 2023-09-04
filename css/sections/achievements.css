@@ -11,7 +11,7 @@
 .achievements__info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
+  column-gap: 20px;
   margin-bottom: 40px;
   color: #212121;
 }

@@ -38,7 +38,7 @@ const initAnimateFacts = () => {
 };
 
 const startAnimateFacts = () => {
-  const collectionCountFacts = document.querySelectorAll(".about-statistic__item-value");
+  const collectionCountFacts = document.querySelectorAll(".about-statistic__item-hidden .about-statistic__item-value");
   collectionCountFacts.forEach((item) => {
     const valueFact = +item.textContent;
     animate({

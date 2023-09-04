@@ -22,6 +22,7 @@ const initCheckBoxAgree = () => {
 const initShowModal = () => {
   document.addEventListener("click", (e) => {
     if (e.target.classList.contains("button-modal")) {
+      closeAllModal();
       showModal(e.target.dataset.modal);
     } else if (e.target.classList.contains("overlay-modal") || e.target.classList.contains("modal__close-overlay")) {
       closeAllModal();

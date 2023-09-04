@@ -38,12 +38,7 @@
           </div>
           <div class="header__logo">
             <a href="">
-              <img
-                loading="lazy"
-                class="header__logo-image header__logo-image--default"
-                src="images/logo-header.svg"
-                alt="logo"
-              />
+              <img class="header__logo-image header__logo-image--default" src="images/logo-header.svg" alt="logo" />
             </a>
           </div>
           <div class="header__block">
@@ -209,7 +204,7 @@
             <div class="header__phone">
               <div class="header__phone-select">
                 <div class="header__phone-overlay block-overlay"></div>
-                <img loading="lazy" src="images/flag-by.svg" alt="flag-by" />
+                <img src="images/flag-by.svg" alt="flag-by" />
                 <svg
                   class="header__phone-svg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +216,7 @@
                 </svg>
                 <ul class="header__phone__list">
                   <li>
-                    <img loading="lazy" src="images/flag-by.svg" alt="flag-by" />
+                    <img src="images/flag-by.svg" alt="flag-by" />
                   </li>
                 </ul>
               </div>
@@ -375,7 +370,7 @@
         <div class="container">
           <div class="achievements__wrapper">
             <div class="achievements__info achievements__info--about">
-              <h2 class="title achievements__info-title">наши достижения</h2>
+              <h2 class="title achievements__info-title">основные преимущества</h2>
             </div>
           </div>
         </div>
@@ -605,15 +600,18 @@
               <h2 class="title">о нас в цифрах</h2>
               <ul class="about-statistic__list">
                 <li class="about-statistic__item">
-                  <h3><span class="about-statistic__item-value">2833</span><span>перевозки</span></h3>
+                  <h3 class="about-statistic__item-visible"><span class="about-statistic__item-value">2833</span><span>перевозки</span></h3>
+                  <h3 class="about-statistic__item-hidden"><span class="about-statistic__item-value">2833</span></h3>
                   <p>За 2020 год мы совершили 2833 перевозки в разных направлениях.</p>
                 </li>
                 <li class="about-statistic__item">
-                  <h3><span class="about-statistic__item-value">34</span><span>автомобиля</span></h3>
+                  <h3 class="about-statistic__item-visible"><span class="about-statistic__item-value">34</span><span>автомобиля</span></h3>
+                  <h3 class="about-statistic__item-hidden"><span class="about-statistic__item-value">34</span></h3>
                   <p>Сейчас находятся в пути и доставляют грузы наших клиентов.</p>
                 </li>
                 <li class="about-statistic__item">
-                  <h3><span class="about-statistic__item-value">48</span><span>стран европы</span></h3>
+                  <h3 class="about-statistic__item-visible"><span class="about-statistic__item-value">48</span><span>стран европы</span></h3>
+                  <h3 class="about-statistic__item-hidden"><span class="about-statistic__item-value">48</span></h3>
                   <p>Мы объездили практически всю Европу за исключением Исландии и Португалии.</p>
                 </li>
               </ul>
@@ -1001,11 +999,13 @@
         </div>
         <h3 class="modal__title">ошибка отправки!</h3>
         <p class="modal__message">Произошла ошибка отправки заявки.</p>
-        <button class="modal__again">Попробуйте ещё раз.</button>
+        <button class="modal__again button-modal"  data-modal="calculation">Попробуйте ещё раз.</button>
       </div>
     </div>
     <div class="overlay-modal hidden"></div>
+    <div class="overlay"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script/header.js"></script>
     <script src="script/sections/our-partners.js"></script>
     <script src="script/sections/achievements.js"></script>
     <script src="script/sections/about-history.js"></script>
