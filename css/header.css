@@ -126,6 +126,12 @@
 .header__localization {
   position: relative;
 }
+.header__localization svg {
+  fill: #fff;
+}
+.header--white .header__localization svg {
+  fill: #000;
+}
 .header__localization-value {
   color: #fff;
   font-size: 16px;
