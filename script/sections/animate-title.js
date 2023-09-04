@@ -34,9 +34,17 @@ const animateTitle =(title)=>{
       newSpan.innerHTML = letter;
       newSpan.classList.add("letter", "letter--hidden");
       title.append(newSpan);
-      setTimeout(() => {
+      if(idx === 0) {
+        setTimeout(() => {
         newSpan.classList.remove("letter--hidden");
-      }, 100 * idx);
+      }, 10);
+      }
+      if(idx != 0){
+        setTimeout(() => {
+          newSpan.classList.remove("letter--hidden");
+        }, 5 * idx);
+      }
+      
     });
 }
 

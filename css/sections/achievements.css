@@ -10,10 +10,12 @@
 }
 .achievements__info {
   display: grid;
-  grid-template-columns: minmax(0, max-content) minmax(0, 718px);
-  column-gap: 139px;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 40px;
   color: #212121;
+}
+.achievements__info-title {
+  padding-right: 20px;
 }
 .achievements__info--about,
 .achievements--service .achievements__info {
@@ -117,7 +119,18 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+@media (max-width: 1700px) {
+  .achievements__slide {
+   padding: 20px;
+  }
+  .achievements__slide h3 {
+    font-size: 24px;
+  }
+ }
 @media (max-width: 1500px) {
+  .achievements__info-title {
+    padding-right: 0px;
+  }
   .achievements__info {
     grid-template-columns: 1fr;
     row-gap: 24px;
@@ -126,6 +139,9 @@
 @media (max-width: 1450px) {
   .achievements__slider-container.container {
     height: 238px;
+  }
+   .achievements__slide h3 {
+    font-size: 20px;
   }
 }
 @media (max-width: 1199px) {
