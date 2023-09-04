@@ -6,10 +6,9 @@
   width: 100%;
   z-index: 99;
   background-color: transparent;
-  transition: 0.5s ease;
 }
 .header--overlay {
-  right: var(--scrollbar-width);
+  padding-right: var(--scrollbar-width) !important;
 }
 .header--white .header__logo-image--default,
 .header--white.header--menu .header__logo-image--white,
