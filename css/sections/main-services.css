@@ -69,6 +69,29 @@
   transform: scale(1);
   transition: 0.5s ease;
 }
+.main-services__services {
+  position: relative;
+}
+.main-services__services-button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.main-services__services-button svg {
+  fill: #E06618;
+  transition: 0.5s ease;
+}
+.main-services__services-button--prev {
+  left: -40px
+}
+.main-services__services-button--next {
+  right: -40px;
+}
+.main-services__services-button--disabled svg{
+  fill: #979797;
+  transition: 0.5s ease;
+}
 @media (min-width: 1023px) {
   .main-services--detail .main-services__slide:hover img{
     transform: scale(1.2);
@@ -77,7 +100,6 @@
 }
 @media (max-width: 767px) {
   .main-services__services {
-    position: relative;
     height: 214px;
   }
   .main-services__swiper {
