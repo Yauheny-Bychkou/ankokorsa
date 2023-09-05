@@ -13,6 +13,12 @@
   border-radius: 8px;
   column-gap: 30px;
 }
+.news__card:hover svg {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
 .news__card svg {
   position: absolute;
   bottom: 30px;

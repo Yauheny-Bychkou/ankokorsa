@@ -1,3 +1,11 @@
+
+
+.swing:hover {
+  -webkit-animation: swing 0.6s ease;
+  animation: swing 0.6s ease;
+   -webkit-animation-iteration-count: 1;
+   animation-iteration-count: 1;
+}
 .additional-services__info {
   padding-top: 160px;
   margin-bottom: 60px;
@@ -40,6 +48,13 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.additional-services__slide:hover svg {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 .additional-services__slide svg {
   position: absolute;

@@ -58,6 +58,13 @@
   padding-right: 20px;
   height: unset;
 }
+
+.main-services__slide:hover svg {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
 .main-services__slide svg {
   position: absolute;
   right: 14px;
