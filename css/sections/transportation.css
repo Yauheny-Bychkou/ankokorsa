@@ -130,11 +130,11 @@
     width: 40%;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .transportation__wrapper-image {
     width: 53%;
     max-width: unset;
-    right: -140px;
+    right: -12%;
   }
   /* .transportation__block-title {
     max-width: 300px;
@@ -142,9 +142,18 @@
 
 }
 @media (max-width: 1300px) {
+  .transportation__wrapper-image {
+    width: 57%;
+    right: -12%;
+  }
   .transportation__block-list,
   .transportation__block-button {
     width: 510px;
+  }
+}
+@media (max-width: 1100px) {
+  .transportation__wrapper-image {
+    right: -19%;
   }
 }
 @media (max-width: 1023px) {
