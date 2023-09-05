@@ -38,11 +38,19 @@ const animateTitle =(title)=>{
         setTimeout(() => {
         newSpan.classList.remove("letter--hidden");
       }, 10);
-      }
-      if(idx != 0){
+      } else if(idx === 1) {
         setTimeout(() => {
           newSpan.classList.remove("letter--hidden");
-        }, 5 * idx);
+        }, 20);
+      } else if(idx === 2) {
+        setTimeout(() => {
+          newSpan.classList.remove("letter--hidden");
+        }, 30);
+      } else {
+        setTimeout(() => {
+          newSpan.classList.remove("letter--hidden");
+        },  5 * idx);
+       
       }
       
     });
