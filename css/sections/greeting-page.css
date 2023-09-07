@@ -65,6 +65,10 @@
   }
 }
 @media (max-width: 990px) {
+  .greeting-page__block {
+    padding-top: 112px;
+    padding-bottom: 80px;
+  }
   .greeting-page__block.greeting-page__block--service h2,
   .greeting-page--services .greeting-page__block h2 {
     font-size: 31px;
@@ -84,10 +88,7 @@
   .greeting-page--detail .greeting-page__block .greeting-page__image.greeting-page__image--service {
     height: 274px;
   }
-  .greeting-page__block {
-    padding-top: 112px;
-    padding-bottom: 80px;
-  }
+
   .greeting-page__block h2,
   .greeting-page--services .greeting-page__block h2 {
     font-size: 31px;
