@@ -77,10 +77,12 @@
   line-height: 120%;
 }
 .transportation__block-head svg {
-  fill: #212121;
+  color: #212121;
   transition: 0.5s ease;
   position: relative;
   transform: rotate(0);
+  width: 16.67px;
+  height: 9.81px;
 }
 .transportation__block-body {
   display: none;
@@ -111,7 +113,7 @@
   transition: all 0.5s ease;
 }
 .transportation__block-item--active .transportation__block-head svg {
-  fill: #fff;
+  color: #fff;
   transform: rotate(-180deg);
   transition: 0.5s ease;
 }

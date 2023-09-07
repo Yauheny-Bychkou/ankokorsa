@@ -11,4 +11,25 @@
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" id="header-select-arrow">
     <path d="M4 4.5L7.4641 0.75H0.535898L4 4.5Z"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 10" id="arrow-container">
+    <path d="M2.24062 0.09375L0.765625 1.56875L9.09895 9.90209L17.4323 1.56875L15.9573 0.09375L9.09895 6.95209L2.24062 0.09375Z" fill="currentColor"></path>
+  </symbol>  
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 17" id="arrow-slider">
+    <path d="M16.25 0L14.4875 1.71214L20.2125 7.28571H0V9.71429H20.2125L14.475 15.2879L16.25 17L25 8.5L16.25 0Z" fill="#212121"></path>
+  </symbol>  
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="modal-close">
+    <path d="M14.4688 1.87875L13.0588 0.46875L7.46875 6.05875L1.87875 0.46875L0.46875 1.87875L6.05875 7.46875L0.46875 13.0588L1.87875 14.4688L7.46875 8.87875L13.0588 14.4688L14.4688 13.0588L8.87875 7.46875L14.4688 1.87875Z" fill="#212121"></path>
+  </symbol>  
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" id="modal-select">
+    <path d="M5 6L9.33013 0.75H0.669873L5 6Z" fill="#111827"></path>
+  </symbol>  
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 8" id="modal-agree">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.562275L3.41629 8L0 4.14057L0.497713 3.57829L3.41629 6.87545L9.50229 0L10 0.562275Z" fill="white"></path>
+  </symbol>  
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 32" id="modal-sign-error">
+    <path d="M30.6693 3.88312L27.6143 0.828125L15.5026 12.9398L3.39094 0.828125L0.335938 3.88312L12.4476 15.9948L0.335938 28.1065L3.39094 31.1615L15.5026 19.0498L27.6143 31.1615L30.6693 28.1065L18.5576 15.9948L30.6693 3.88312Z" fill="#DC2626"></path>
+  </symbol> 
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 30" id="modal-svg-success">
+    <path d="M12.5005 23.0995L3.40052 13.9995L0.367188 17.0328L12.5005 29.1661L38.5005 3.16615L35.4672 0.132812L12.5005 23.0995Z" fill="#6CFF6C"></path>
+  </symbol>   
 </svg>

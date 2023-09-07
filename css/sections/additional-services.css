@@ -58,6 +58,8 @@
 }
 .additional-services__slide svg {
   position: absolute;
+  width: 25px;
+  height: 17px;
   bottom: 14px;
   right: 14px;
 }
@@ -76,7 +78,15 @@
     max-width: 270px;
   }
 }
+@media (max-width: 1300px) {
+  .additional-services__info {
+  column-gap: 100px;
+  }
+}
 @media (max-width: 1199px) {
+ .additional-services__info {
+  column-gap: 0px;
+  }  
   .additional-services__info-text p {
     font-size: 18px;
   }

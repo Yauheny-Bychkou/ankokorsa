@@ -35,6 +35,8 @@
   color: #d6d6d6;
 }
 .last-news__head-block svg {
+  width: 16.67px;
+  height: 9.81px;
   fill: #212121;
   position: relative;
   transform: rotate(0);
