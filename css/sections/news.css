@@ -20,6 +20,8 @@
   animation-iteration-count: 1;
 }
 .news__card svg {
+  width: 25px;
+  height: 17px;
   position: absolute;
   bottom: 30px;
   right: 30px;

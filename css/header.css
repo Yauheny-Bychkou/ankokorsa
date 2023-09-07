@@ -45,7 +45,7 @@
 .header--white .header__nav-svg,
 .header--white .header__phone-svg,
 .header--white .header__phone-mobile-svg {
-  fill: #212121;
+  color: #212121;
 }
 .header--white .header__nav-subitem,
 .header--white .header__nav-nested li {
@@ -54,7 +54,7 @@
 }
 
 .header--white .header__nav-subsvg {
-  fill: #ffff;
+  color: #ffff;
 }
 
 .header__wrapper {
@@ -134,10 +134,10 @@
   position: relative;
 }
 .header__localization svg {
-  fill: #fff;
+  color: #fff;
 }
 .header--white .header__localization svg {
-  fill: #000;
+  color: #000;
 }
 .header__localization-value {
   color: #fff;
@@ -199,7 +199,7 @@
 .header__phone-svg,
 .header__nav-svg,
 .header__phone-mobile-svg {
-  fill: #fff;
+  color: #fff;
 }
 /* //////////// */
 .header__nav-sublist {
