@@ -7,7 +7,7 @@ const initSwiperAchievements = () => {
         slidesPerView: 4,
         spaceBetween: 20,
       },
-      1024: {
+      1100: {
         slidesPerView: 4,
         spaceBetween: 16,
       },
