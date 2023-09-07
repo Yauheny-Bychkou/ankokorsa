@@ -180,6 +180,9 @@
 .header__nav-item {
   position: relative;
 }
+.header__nav-item {
+  display: block;
+}
 .header__phone-svg,
 .header__nav-svg,
 .header__phone-mobile-svg {
@@ -240,7 +243,7 @@
   transition: 0.5s ease;
 }
 .header__nav-subitem:hover .header__nav-subvalue,
-.header__nav-nested li:hover span {
+.header__nav-nested li:hover a {
   color: #e06618;
   transition: 0.5s ease;
 }
