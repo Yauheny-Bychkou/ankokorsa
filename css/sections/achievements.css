@@ -140,6 +140,9 @@
   }
 }
 @media (max-width: 1199px) {
+  .achievements__info-text p {
+    font-size: 18px;
+  }
   .achievements__info {
     column-gap: 60px;
   }

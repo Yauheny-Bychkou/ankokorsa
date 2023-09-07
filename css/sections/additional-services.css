@@ -69,12 +69,19 @@
 }
 @media (max-width: 1400px) {
   .additional-services__slide {
-    padding: 14px;
+    padding: 22px;
   }
   .additional-services__slide h3 {
     font-size: 20px;
+    max-width: 270px;
   }
 }
+@media (max-width: 1199px) {
+  .additional-services__info-text p {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1023px) {
   .additional-services__info {
     grid-template-columns: 1fr;

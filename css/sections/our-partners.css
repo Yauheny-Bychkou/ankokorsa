@@ -4,8 +4,8 @@
 .our-partners__wrapper {
   margin-bottom: 60px;
   display: grid;
-  grid-template-columns: minmax(0, max-content) minmax(0, 718px);
-  column-gap: 230px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
 }
 .our-partners__wrapper-text p {
   color: #212121;
@@ -58,10 +58,19 @@
   max-width: calc(75.85vw + 40px);
 }
 @media (max-width: 1450px) {
+  .our-partners__wrapper {
+    column-gap: 20px;
+   }
   .our-partners__container {
     max-width: calc(85.85vw + 40px);
   }
 }
+@media (max-width: 1199px) {
+  .our-partners__wrapper-text p {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1023px) {
   .our-partners__wrapper {
     grid-template-columns: 1fr;

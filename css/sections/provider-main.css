@@ -181,3 +181,8 @@
     font-size: 14px;
   }
 }
+@media (max-width: 400px) {
+  .provider-main__info-title {
+    font-size: 22px;
+  }
+}

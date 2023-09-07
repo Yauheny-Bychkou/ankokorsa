@@ -99,6 +99,13 @@
   text-decoration-line: underline;
 }
 @media (max-width: 1199px) {
+  .last-news__body-image {
+    width: 100%;
+  }
+  .last-news__body-info p {
+    width: 100%;
+    max-width: unset;
+  }
   .last-news__head { 
     display: flex;
     justify-content: space-between;
