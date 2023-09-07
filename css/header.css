@@ -37,6 +37,11 @@
 .header--white .header__localization-value {
   color: #212121;
 }
+.header__phone-svg,
+.header__localization svg {
+  width: 8px;
+  height: 5px;
+}
 .header--white .header__nav-svg,
 .header--white .header__phone-svg,
 .header--white .header__phone-mobile-svg {
@@ -183,6 +188,14 @@
 .header__nav-item {
   display: block;
 }
+.header__phone-mobile-svg {
+  width: 20px;
+  height: 20px;
+}
+.header__nav-svg {
+  width: 8px;
+  height: 5px;
+}
 .header__phone-svg,
 .header__nav-svg,
 .header__phone-mobile-svg {
@@ -230,7 +243,9 @@
   border-bottom-right-radius: 4px;
 }
 .header__nav-subsvg {
-  fill: #212121;
+  width: 8px;
+  height: 5px;
+  color: #212121;
   transition: 0.5s ease;
 }
 .header__nav-subitem:hover,
@@ -239,7 +254,7 @@
   transition: 0.5s ease;
 }
 .header__nav-subitem:hover .header__nav-subsvg {
-  fill: #e06618;
+  color: #e06618 !important;
   transition: 0.5s ease;
 }
 .header__nav-subitem:hover .header__nav-subvalue,
