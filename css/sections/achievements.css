@@ -160,6 +160,9 @@
   .achievements__info-title {
     max-width: 330px;
    }
+   .achievements__slider {
+    margin-bottom: 80px;
+  }
 }
 @media (max-width: 767px) {
   .achievements--service .achievements__swiper .swiper-slide,
@@ -177,9 +180,7 @@
   .achievements__swiper {
     width: 100%;
   }
-  .achievements__slider {
-    margin-bottom: 80px;
-  }
+  
   .achievements__slider-container.container {
     padding: 0;
     margin: 0;

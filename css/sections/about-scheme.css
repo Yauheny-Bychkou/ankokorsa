@@ -39,6 +39,11 @@
 .about-scheme__text ul li a {
   color: #e06618;
 }
+@media (max-width: 990px) {
+  .about-scheme__wrapper {
+    padding: 80px 0;
+  }
+}
 @media (max-width: 767px) {
   .about-scheme__text ul {
     padding-left: 25px;
@@ -46,9 +51,7 @@
   .about-scheme__wrapper .title {
     margin-bottom: 24px;
   }
-  .about-scheme__wrapper {
-    padding: 80px 0;
-  }
+
   .about-scheme__text {
     margin-bottom: 30px;
   }

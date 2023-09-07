@@ -31,6 +31,7 @@
   grid-template-columns: repeat(2, 1fr);
   padding-top: 160px;
   padding-bottom: 160px;
+  column-gap: 20px;
 }
 .about-provider__wrapper.about-provider__wrapper--service {
   grid-template-columns: minmax(0, 494px) 1fr;
@@ -51,6 +52,12 @@
   font-weight: 400;
   line-height: 140%;
 }
+@media (max-width: 1245px) {
+  .about-provider__image {
+    height: 430px;
+  }
+}
+
 @media (max-width: 1199px) {
   .about-provider__info-text {
     max-width: unset;
@@ -76,6 +83,10 @@
   .about-provider__wrapper {
     row-gap: 30px;
     grid-template-columns: 1fr;
+  }
+   .about-provider__wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 @media (max-width: 767px) {
@@ -104,10 +115,7 @@
     height: unset;
     max-height: 414px;
   }
-  .about-provider__wrapper {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
+ 
   .about-provider__info-text {
     margin-bottom: 30px;
   }

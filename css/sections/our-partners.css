@@ -77,6 +77,12 @@
     row-gap: 24px;
   }
 }
+@media (max-width: 990px) {
+  .our-partners__slider {
+    margin-bottom: 26px;
+  }  
+}
+
 @media (max-width: 767px) {
   .our-partners__wrapper-text p {
     font-size: 16px;
@@ -120,7 +126,5 @@
     font-weight: 500;
     line-height: 140%;
   }
-  .our-partners__slider {
-    margin-bottom: 26px;
-  }
+
 }
