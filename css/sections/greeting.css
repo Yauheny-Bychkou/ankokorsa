@@ -70,7 +70,7 @@
 .greeting__content-info {
   padding-top: 123px;
 }
-.greeting__content-info h2 {
+.greeting__content-title {
   color: #fff;
   font-size: 70px;
   font-weight: 900;
@@ -127,7 +127,7 @@
   .greeting__content-info {
     padding-top: 100px;
   }
-  .greeting__content-info h2 {
+  .greeting__content-title {
     font-size: 50px;
     max-width: 670px;
     height: 149px;
@@ -174,7 +174,7 @@
   .greeting__content-block {
     flex-direction: column;
   }
-  .greeting__content-info h2 {
+  .greeting__content-title {
     max-width: 600px;
   }
   .greeting__wrapper {
@@ -193,7 +193,7 @@
   }
 }
 @media (max-width: 767px) {
-  .greeting__content-info h2 {
+  .greeting__content-title {
     font-size: 31px;
     margin-bottom: 24px;
     height: 100px;

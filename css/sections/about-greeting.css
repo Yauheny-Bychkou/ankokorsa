@@ -46,7 +46,7 @@
   height: 100%;
   object-fit: cover;
 }
-.about-greeting__block h2 {
+.about-greeting__title {
   color: #fff;
   font-size: 70px;
   font-weight: 900;
@@ -55,10 +55,10 @@
   text-transform: uppercase;
 }
 
-.about-greeting--white .about-greeting__block h2 {
+.about-greeting--white .about-greeting__title {
   color: #000;
 }
-.about-greeting--detail.about-greeting--white .about-greeting__block h2 span {
+.about-greeting--detail.about-greeting--white .about-greeting__title span {
   font-size: 40px;
   font-weight: 600;
 }
@@ -66,10 +66,10 @@
   .about-greeting__block.about-greeting__block--service h2 {
     font-size: 31px;
   }
-  .about-greeting--detail .about-greeting__block h2 {
+  .about-greeting--detail .about-greeting__title {
     font-size: 31px;
   }
-  .about-greeting--detail.about-greeting--white .about-greeting__block h2 span {
+  .about-greeting--detail.about-greeting--white .about-greeting__title span {
     font-size: 24px;
     font-weight: 600;
   }
@@ -85,7 +85,7 @@
     padding-top: 112px;
     padding-bottom: 82px;
   }
-  .about-greeting__block h2 {
+  .about-greeting__title {
     font-size: 31px;
   }
   .about-greeting__image {
@@ -99,10 +99,10 @@
   .about-greeting__block.about-greeting__block--service h2 {
     font-size: 25px;
   }
-  .about-greeting--detail .about-greeting__block h2 {
+  .about-greeting--detail .about-greeting__title {
     font-size: 23px;
   }
-  .about-greeting--detail.about-greeting--white .about-greeting__block h2 span {
+  .about-greeting--detail.about-greeting--white .about-greeting__title span {
     font-size: 18px;
     font-weight: 600;
   }

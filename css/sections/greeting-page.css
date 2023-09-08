@@ -40,7 +40,7 @@
   height: 100%;
   object-fit: cover;
 }
-.greeting-page__block h2 {
+.greeting-page__title {
   color: #fff;
   font-size: 70px;
   font-weight: 900;
@@ -48,19 +48,19 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
 }
-.greeting-page--services .greeting-page__block h2 {
+.greeting-page--services .greeting-page__title {
   color: #000;
 }
 
-.greeting-page--white .greeting-page__block h2 {
+.greeting-page--white .greeting-page__title {
   color: #000;
 }
-.greeting-page--services .greeting-page__block h2 span {
+.greeting-page--services .greeting-page__title span {
   font-size: 40px;
   font-weight: 600;
 }
 @media (max-width: 1400px) {
-  .greeting-page--confidentiality.greeting-page--services .greeting-page__block h2 {
+  .greeting-page--confidentiality.greeting-page--services .greeting-page__title {
     font-size: 31px;
   }
 }
@@ -70,13 +70,13 @@
     padding-bottom: 80px;
   }
   .greeting-page__block.greeting-page__block--service h2,
-  .greeting-page--services .greeting-page__block h2 {
+  .greeting-page--services .greeting-page__title {
     font-size: 31px;
   }
-  .greeting-page--detail .greeting-page__block h2 {
+  .greeting-page--detail .greeting-page__title {
     font-size: 31px;
   }
-  .greeting-page--services .greeting-page__block h2 span {
+  .greeting-page--services .greeting-page__title span {
     font-size: 24px;
     font-weight: 600;
   }
@@ -89,8 +89,8 @@
     height: 274px;
   }
 
-  .greeting-page__block h2,
-  .greeting-page--services .greeting-page__block h2 {
+  .greeting-page__title,
+  .greeting-page--services .greeting-page__title {
     font-size: 31px;
   }
   .greeting-page__image {
@@ -99,23 +99,23 @@
   .greeting-page--detail .greeting-page__image {
     height: 246px;
   }
-  .greeting-page--confidentiality.greeting-page--services .greeting-page__block h2 {
+  .greeting-page--confidentiality.greeting-page--services .greeting-page__title {
     font-size: 23px;
   }
 }
 
 @media (max-width: 410px) {
-  .greeting-page--confidentiality.greeting-page--services .greeting-page__block h2 {
+  .greeting-page--confidentiality.greeting-page--services .greeting-page__title {
     font-size: 20px;
   }
   .greeting-page__block.greeting-page__block--service h2 {
     font-size: 25px;
   }
-  .greeting-page--detail .greeting-page__block h2,
-  .greeting-page--services .greeting-page__block h2 {
+  .greeting-page--detail .greeting-page__title,
+  .greeting-page--services .greeting-page__title {
     font-size: 23px;
   }
-  .greeting-page--services .greeting-page__block h2 span {
+  .greeting-page--services .greeting-page__title span {
     font-size: 18px;
     font-weight: 600;
   }
