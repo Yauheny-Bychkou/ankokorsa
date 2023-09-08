@@ -25,7 +25,8 @@
 .footer__top {
   display: flex;
 }
-.footer__block h3 {
+.footer__nav-title {
+  display: block;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -201,7 +202,7 @@
   }
 }
 @media (max-width: 767px) {
-  .footer__block h3 {
+  .footer__nav-title {
     margin-bottom: 7px;
   }
   .footer__nav-item {

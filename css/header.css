@@ -360,7 +360,8 @@
     right: 0;
     transition: 0.5s ease;
   }
-  .header-menu__block h3 {
+  .header-menu__title {
+    display: block;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
