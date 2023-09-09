@@ -6,11 +6,13 @@ const initAnimateAfterLoadPage = () => {
 };
 
 const initAnimateTitleBeforeScroll = () => {
+  let count = 0;  
   const observer = new IntersectionObserver(
     (enties) => {
       enties.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && count === 0) {
           animateTitle(entry.target);
+          count++;
         }
       });
     },
@@ -26,8 +28,7 @@ const initAnimateTitleBeforeScroll = () => {
 
 
 const animateTitle =(title)=>{
-  const textTitle = title.textContent.split("");
-    title.innerHTML = "";
+  const textTitle = title.dataset.title.split("");
     textTitle.forEach((letter, idx) => {
       const newSpan = document.createElement("span");
 
@@ -36,7 +37,7 @@ const animateTitle =(title)=>{
       title.append(newSpan);
         setTimeout(() => {
           newSpan.classList.remove("letter--hidden");
-        },  5 * idx);
+        },  15 * idx);
       
     });
 }
