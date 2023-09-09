@@ -77,6 +77,21 @@ const initSelectModal = () => {
   });
 };
 
+const initSelectPhone = () => {
+  const blockSelectPhone = document.querySelector('.modal__phone-select-block');
+  document.addEventListener('click',(e)=>{
+    if(e.target.classList.contains('modal__phone-select-overlay')) {
+      blockSelectPhone.classList.toggle('modal__phone-select-block--active');
+    } else {
+      blockSelectPhone.classList.remove('modal__phone-select-block--active');
+    }
+  });
+};
+
+if(document.querySelector('.modal__phone-select')) {
+  initSelectPhone();
+}
+
 if (document.querySelector(".modal__select")) {
   initSelectModal();
 }

@@ -80,6 +80,34 @@
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
+
+}
+.modal__phone-select-block {
+  position: relative;
+}
+.modal__phone-select-list {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+.modal__phone-select-block--active .modal__phone-select-list{
+  top: 100%;
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.5s ease;
+}
+.modal__phone-select-item {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+}
+.modal__phone-select-head {
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: 4px;

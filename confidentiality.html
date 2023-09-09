@@ -477,7 +477,7 @@
         </div>
       </div>
     </footer>
-    <div style="opacity: 0" class="modal modal--calculation">
+    <div style="opacity: 0;" class="modal modal--calculation">
       <form action="">
         <div class="modal__scroll">
           <div class="modal__wrapper">
@@ -503,10 +503,22 @@
               </div>
               <div class="modal__input modal__input--phone">
                 <div class="modal__phone-select">
-                  <img loading="lazy" src="images/flag-by.svg" alt="flag" />
-                  <svg>
-                    <use xlink:href="images/sprite.svg#modal-select"></use>
-                  </svg>
+                  <div class="modal__phone-select-block">
+                    <div class="modal__phone-select-head">
+                      <div class="modal__phone-select-overlay block-overlay"></div>
+                      <img loading="lazy" src="images/flag-by.svg" alt="flag" />
+                      <svg>
+                        <use xlink:href="images/sprite.svg#modal-select"></use>
+                      </svg>                    
+                    </div>      
+                    <ul class="modal__phone-select-list">
+                      <li class="modal__phone-select-item">
+                        <a href="">
+                          <img loading="lazy" src="images/flag-by.svg" alt="flag" />
+                        </a>
+                      </li>
+                    </ul>              
+                  </div>
                 </div>
 
                 <input type="text" placeholder="+375*" />
