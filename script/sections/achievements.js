@@ -1,7 +1,7 @@
 const initSwiperAchievements = () => {
   const swiperAchievements = new Swiper(".achievements__swiper", {
     
-    freeMode: true,
+    
     breakpoints: {
       1250: {
         slidesPerView: 4,
@@ -12,6 +12,7 @@ const initSwiperAchievements = () => {
         spaceBetween: 16,
       },
       768: {
+        freeMode: true,
         slidesPerView: "auto",
         spaceBetween: 16,
       },

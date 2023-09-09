@@ -1,7 +1,7 @@
 const initSwiperAdditionServices = () => {
   const swiperAdditionServices = new Swiper(".additional-services__swiper", {
     
-    freeMode: true,
+    
     breakpoints: {
       1250: {
         slidesPerView: 4,
@@ -12,6 +12,7 @@ const initSwiperAdditionServices = () => {
         spaceBetween: 16,
       },
       768: {
+        freeMode: true,
         slidesPerView: "auto",
         spaceBetween: 16,
       },

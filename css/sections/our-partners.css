@@ -91,12 +91,14 @@
     position: relative;
     height: 220px;
     max-width: 100vw;
+    padding: 0 20px;
   }
   .our-partners__swiper {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20px;
     width: 100%;
+    padding: 20px 0;
   }
   .our-partners__swiper .swiper-slide {
     width: 296px;

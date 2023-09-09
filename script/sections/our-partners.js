@@ -1,9 +1,10 @@
 const initSwiperOurPartners = () => {
   const swiperOurPartners = new Swiper(".our-partners__swiper", {
     slidesPerView: "auto",
-    freeMode: true,
+    
     breakpoints: {
       768: {
+        freeMode: true,
         spaceBetween: 20,
       },
       320: {

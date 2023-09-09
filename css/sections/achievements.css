@@ -178,13 +178,14 @@
     margin-bottom: 64px;
   }
   .achievements__swiper {
-    width: 100%;
+    width: 103%;
+    padding: 20px 0;
   }
-  
   .achievements__slider-container.container {
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
     height: 220px;
+    max-width: 100vw;
   }
   .achievements__slide h3 {
     font-size: 20px;
