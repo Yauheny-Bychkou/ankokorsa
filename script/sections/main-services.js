@@ -1,7 +1,7 @@
 const initSwiperServices = () => {
   const swiperServices = new Swiper(".main-services__swiper", {
     slidesPerView: "auto",
-    freeMode: true,
+    
     navigation: {
       nextEl: '.main-services__services-button--next',
       prevEl: '.main-services__services-button--prev',
@@ -9,6 +9,7 @@ const initSwiperServices = () => {
     },
     breakpoints: {
       768: {
+        freeMode: true,
         spaceBetween: 20,
       },
       320: {
