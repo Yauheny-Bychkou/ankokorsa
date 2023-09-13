@@ -343,6 +343,11 @@
 }
 
 @media (max-width: 1100px) {
+  .header__request.block-button {
+    width: 100%;
+    margin-top: 22px;
+    font-size: 16px;
+  }  
   .header-menu {
     display: block;
     position: fixed;
